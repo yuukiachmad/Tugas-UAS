@@ -1,0 +1,38 @@
+GET http://localhost:300/pembayaran
+
+###
+GET http://localhost:300/pembayaran/1
+
+###
+POST http://localhost:300/pembayaran
+Content-Type: application/json
+
+{
+    "name": "Yuuki",
+    "email": "yuuki@gmail.com",
+    "telepon": "0812345",
+    "status": "Pending"
+}
+
+###
+PATCH http://localhost:300/pembayaran/13
+Content-Type: application/json
+
+{
+    "name": "Coba",
+    "email": "john@gmail.com",
+    "telepon": "0812345",
+    "status": "1"
+}
+
+
+###
+DELETE http://localhost:300/pembayaran/14
+Content-Type: application/json
+
+{
+    "name": "Coba",
+    "email": "john@gmail.com",
+    "telepon": "0812345",
+    "status": "1"
+}
